@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+}
+
+body {
+    background-image: linear-gradient(rgb(243, 243, 243),
+   rgb(255, 248, 243));
+}
+
+#landing {
+    height: 100vh;
+    background-image: url(../images/ce.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: rgb(118, 118, 118);
+}
+
+.innerhead {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(123, 114, 114, 0.4);
+}
+
+#logo, #main-text {
+    display: inline-block;
+    text-align: center;
+}
+
+#main-text {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 10px 10px 50px black;
+}
+
+#header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+div .big-btn {
+    height: 30%;
+    text-align: center;
+}
+
+div .big-btn button {
+    box-shadow: 10px 10px 100px black,
+        -1px -1px 150px black;
+    cursor: pointer;
+}
+
+.big-btn button {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: brown;
+    border-style: none;
+    color: #fff;
+    font-size: large;
+    transition: all 0.5s;
+}
+
+.big-btn button:hover {
+    background-color: rgba(69, 11, 11);
+}
+
+@media screen and (max-width: 700px) {
+    #landing {
+        background-image: none;
+    }
+
+    div .big-btn button {
+        box-shadow: none;
+    }
+}
+
+.post {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 550px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+hr {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+.post-head {
+    font-weight: bold;
+    color: grey;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.post-image {
+    width: 100%;
+}
+
+.time {
+    color: grey;
+    font-style: italic;
+}
+
+#services {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: rgb(159, 159, 159);
+    font-size: small;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot-head {
+    font-weight: bold;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.foot-head:hover {
+    background-color: rgb(52, 52, 52);
+}
+
+.contact {
+    display: none;
+}
+
+.bar {
+    height: 30px;
+    position: fixed;
+}
+
+.back {
+    margin-left: 1vmax;
+}
+
+.back button {
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: grey;
+    transition: all 0.3s;
+}
+
+.back button:hover {
+    color: brown;
+}
+
+@media screen and (max-width: 614px) {
+    .bar {
+        background-color: rgb(204, 204, 204);
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.pop {
+    animation-name: pop;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    transition: all 0.3;
+}
+
+.fullpop {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(116, 116, 121, 0.5);
+    display: none;
+    top: 0;
+    bottom: 0;
+}
+
+.disp {
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    margin: 10px;
+}
+
+.popdiv {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.noUp {
+    position: unset;
+}
+
+
+@keyframes pop {
+	0%{
+       color: rgba(118, 118, 118, 0);
+       text-shadow: none;
+	}
+	100%{
+        
+    }
+}
